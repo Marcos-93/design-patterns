@@ -8,7 +8,9 @@ public abstract class Imposto {
 		this.outroImposto = outroImposto;
 		
 	}
-	public Imposto() {}
+	public Imposto() {
+		outroImposto = null;
+	}
 	public abstract double calcula(Orcamento orcamento);
 	
 	protected double calculoDoOutroImposto(Orcamento orcamento) {
