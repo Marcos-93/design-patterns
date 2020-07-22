@@ -1,6 +1,6 @@
 package br.com.alura.aula1;
 
-public class ICCC implements Imposto{
+public class ICCC extends Imposto{
 	@Override
 	public double calcula(Orcamento orcamento) {
 		double saldo = orcamento.getValor();
