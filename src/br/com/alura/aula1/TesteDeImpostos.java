@@ -1,7 +1,5 @@
 package br.com.alura.aula1;
 
-import java.util.Map;
-import java.util.stream.Collectors;
 
 import br.com.alura.aula2.Item;
 import br.com.alura.aula3.ICPP;
