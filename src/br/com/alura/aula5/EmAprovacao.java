@@ -2,8 +2,15 @@ package br.com.alura.aula5;
 
 
 public class EmAprovacao implements EstadoDeUmOrcamento {
+	
+	private boolean descontoAplicado = false;
 	public void aplicaDescontoExtra(Orcamento orcamento) {
-		orcamento.valor -= orcamento.getValor()*0.05;
+		if(!descontoAplicado) {
+			orcamento.valor -= orcamento.getValor()*0.05;
+			descontoAplicado = true;
+		}else {
+			throw new RuntimeException("Desconto já aplicado!");
+		}
 	}
 
 	@Override

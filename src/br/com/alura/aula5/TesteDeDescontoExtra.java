@@ -17,7 +17,11 @@ public class TesteDeDescontoExtra {
 		System.out.println(reforma.getValor());
 		
 		reforma.finaliza();
-		reforma.aprova();
+		try {
+			reforma.aplicaDescontoExtra();
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 
 }
